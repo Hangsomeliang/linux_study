@@ -9,7 +9,10 @@ static void area(void)
 
 	printf("Please input:");
 	scanf("%f%f%f",&a,&b,&c);
-	s = 1/2*(a+b+c);
+
+	printf("a = %f\tb = %f\tc = %f\n",a,b,c);
+
+	s = 1.0/2*(a+b+c);
 	area =sqrt(s*(s-a)*(s-b)*(s-c));
 	printf("area = %f\n",area);
 	return ;
