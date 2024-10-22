@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+#define PI 3.14
+
 static void test6(void)
 {
 	int i,j,k;
@@ -103,7 +106,15 @@ static void test11(void)
 
 static void test12(void)
 {
-	
+	int r = 1;
+	float area;
+	for(r = 1;;r++)
+	{
+		area = PI*r*r;
+		if(area>100)
+			break;
+		printf("area = %f\n",area);
+	}	
 }
 
 int main(void)
