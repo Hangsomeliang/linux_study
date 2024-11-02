@@ -13,7 +13,7 @@ typedef struct node_st
 
 sqlist *sqlist_create();
 
-void sqlist *sqlist_create1(sqlist **);
+void sqlist_create1(sqlist **);
 
 int sqlist_insert(sqlist *,int i,datatype *);
 
@@ -26,6 +26,8 @@ int sqlist_isempty(sqlist *);
 int sqlist_setempty(sqlist *);
 
 int sqlist_getnum(sqlist*);
+
+void sqlist_display(sqlist*);
 
 int sqlist_destroy(sqlist *);
 
